@@ -1,6 +1,6 @@
-import { mongoose } from "mongoose";
+const mongoose =  require("mongoose");
 
-mongoose.connect(process.env.MONGO_URL);
+mongoose.connect('mongodb+srv://shadowFang09:JawYJDSOePKwnWV3@cluster0.x4py9o2.mongodb.net/');
 const todoschema = mongoose.Schema({
     title: String,
     description: String,
